@@ -1,0 +1,18 @@
+
+<mvc:View xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
+	<SlideTile class="sapUiTinyMarginBegin sapUiLargeMarginTop" transitionTime="250" displayTime="2500">
+		<GenericTile
+				backgroundImage="https://user-images.githubusercontent.com/5984684/151355518-b7596b53-aa98-4d23-8851-d89db8e5136a.png"
+				frameType="TwoByOne" press="onPress">
+			<TileContent>
+				<NewsContent
+						contentText="To Do App with estimated time assigned for each activity." />
+			</TileContent>
+		</GenericTile>
+	</SlideTile>
+    <Image src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" class="sapUiSmallMarginBegin sapUiSmallMarginTop" width="2em"/>
+    <Image src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"  class="sapUiSmallMarginBegin" width="2em"/>  
+    <Image src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"  class="sapUiSmallMarginBegin" width="2em"/>
+    <Image src="https://code.visualstudio.com/assets/images/code-stable.png" class="sapUiSmallMarginBegin sapUiLargeMarginEnd" width="2em"/>     
+    <Link text="DEMO" emphasized="true" href="https://aufaraditya.github.io/Sparetodo/" class="sapUiLargeMarginBegin"/>
+</mvc:View>

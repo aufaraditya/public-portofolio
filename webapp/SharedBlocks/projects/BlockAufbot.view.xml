@@ -1,0 +1,20 @@
+
+<mvc:View xmlns:core="sap.ui.core" 
+xmlns="sap.m" 
+xmlns:mvc="sap.ui.core.mvc">
+
+	<SlideTile class="sapUiTinyMarginBegin sapUiSmallMarginTop" transitionTime="250" displayTime="2500">
+	
+        <GenericTile
+				backgroundImage="https://user-images.githubusercontent.com/5984684/151359161-e4fa4982-dcb9-409e-af2f-4ba73345d881.jpg"
+				frameType="TwoByOne" press="onPressAufbot">
+			<TileContent>
+				<NewsContent
+						contentText="A simple web chatbot app about the Author, Aditya Aufar" />
+			</TileContent>
+		</GenericTile>
+	</SlideTile>
+    <Image press="onBtnPress" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" class="sapUiSmallMarginBegin sapUiSmallMarginTop" width="2em"/>
+    <Image src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" class="sapUiMediumMarginBegin" width="2em"/> 
+    <Image src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg" class="sapUiMediumMarginBegin" width="5em"/>
+</mvc:View>

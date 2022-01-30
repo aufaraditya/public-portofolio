@@ -1,0 +1,109 @@
+
+<core:View
+	controllerName="aaufar.aufportofolioproject.SharedBlocks.career.Timeline"
+	xmlns="sap.suite.ui.commons"
+	xmlns:core="sap.ui.core"
+	xmlns:m="sap.m"
+	width="100%"
+	height="100%">
+	<m:Toolbar height="50px" class="sapUiMediumMarginTop">
+		<m:Title text="PT Abyor International / NTT Data Bussiness Solutions Indonesia" class="sapUiSmallMarginTop"/>
+	</m:Toolbar>
+	<m:Panel id="idPanel"
+	         height="350px">
+        	<Timeline
+			id="idTimeline"
+            sortOldestFirst="true"
+			axisOrientation="Horizontal"
+			enableDoubleSided="false"
+			lazyLoading="true"
+			textHeight="automatic"
+			showHeaderBar="false"
+			showIcons="false">
+			<content>
+				<TimelineItem
+					id="idTemplateItem1"
+					select="onPressItems"
+					maxCharacters="5000"
+					dateTime="10/1/2014"
+					text="IMPLEMENTATION - Developing SAP Enhancements, Procedural ALV Reports and Smartforms"
+					title="- SAP ABAP (MM and SD Module)"
+					userName="PT. Suryajaya Teknotama">
+				</TimelineItem>
+                <TimelineItem
+					id="idTemplateItem2"
+					select="onPressItems"
+					maxCharacters="5000"
+					dateTime="1/1/2015"
+					text="IMPLEMENTATION - Developing SAP Enhancements, User Exit, Procedural ALV Reports and Smartforms"
+					title="- SAP ABAP (MM,SD,FM and FI Module)"
+					userName="PT Pupuk Indonesia Holding Company">
+				</TimelineItem>
+                <TimelineItem
+					id="idTemplateItem3"
+					select="onPressItems"
+					maxCharacters="5000"
+					dateTime="1/6/2015"
+					text="SUPPORT - Evaluating and fixing existing programs as the effect of Server Migration"
+					title="- SAP ABAP (MM Module)"
+					userName="Pertamina Hulu Energi ONWJ Ltd">
+				</TimelineItem>
+                <TimelineItem
+					id="idTemplateItem4"
+					select="onPressItems"
+					maxCharacters="5000"
+					dateTime="1/8/2015"
+					text="IMPLEMENTATION - Developing Web App (Non SAP) using Angular JS and Java Spring and fixing existing programs in SAP part"
+					title="- Web App and SAP ABAP (HCM Module)"
+					userName="GMF AeroAsia">
+				</TimelineItem>
+                <TimelineItem
+					id="idTemplateItem5"
+					select="onPressItems"
+					maxCharacters="5000"
+					dateTime="1/1/2016"
+					text="IMPLEMENTATION - Developing SAP Enhancements, User Exit, BDC, Data Conversion, Procedural ALV Reports and Smartforms"
+					title="- SAP ABAP (MM, FI, PM, PP, SD and QM Module)"
+					userName="PT Reska Multi Usaha">
+				</TimelineItem>
+                <TimelineItem
+					id="idTemplateItem6"
+					select="onPressItems"
+					maxCharacters="5000"
+					dateTime="1/9/2016"
+					text="IMPLEMENTATION AND SUPPORT - Developing SAP Enhancements, Data Conversion, User Exit, Web Service with RFC, Procedural ALV Reports and Smartforms"
+					title="- SAP ABAP (MM, FI and FM Module)"
+					userName="Telekomunikasi Indonesia">
+				</TimelineItem>
+                <TimelineItem
+					id="idTemplateItem8"
+					select="onPressItems"
+					maxCharacters="5000"
+					dateTime="1/1/2018"
+					text="SUPPORT - Fixing existing various programs and SAP Query"
+					title="- SAP ABAP (MM, FI, and PM Module)"
+					userName="Pertamina Hulu Energi ONWJ Ltd">
+				</TimelineItem>
+                <TimelineItem
+					id="idTemplateItem9"
+					select="onPressItems"
+					maxCharacters="5000"
+					dateTime="1/6/2019"
+					text="IMPLEMENTATION - Developing SAP Enhancements, User Exit, BDC, Procedural ALV Reports, CDS View and Smartforms"
+					title="- SAP ABAP (MM and SD Module)"
+					userName="PT Surya Pertiwi">
+				</TimelineItem>
+                <TimelineItem
+					id="idTemplateItem10"
+					select="onPressItems"
+					maxCharacters="5000"
+					dateTime="1/4/2020 - Now"
+					text="IMPLEMENTATION - TEAM LEAD - Developing SAP Enhancements (Infotypes), Procedural and OO ALV Reports, Odata Service, FTP Interfacing, Data Conversion and Workflow"
+					title="- SAP ABAP (HCM Module)"
+					userName="Ministry of Finance - Brunei, DYNAMIK Technologies">
+				</TimelineItem>
+			</content>
+		</Timeline>
+	</m:Panel>
+</core:View>
+

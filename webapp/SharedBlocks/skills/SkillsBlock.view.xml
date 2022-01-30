@@ -1,0 +1,48 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.uxap"
+	xmlns:m="sap.m"
+	xmlns:core="sap.ui.core"
+	height="100%">
+    
+    <m:VBox class="sapUiSmallMarginEnd sapUiSmallMarginBottom">
+
+        <m:HBox class="sapUiMediumMarginTop">
+            <m:Image src="https://cdn-icons-png.flaticon.com/512/5969/5969210.png" class="sapUiTinyMarginBegin" width="4em"/>
+            <m:Title text="CDS" class="sapUiMediumMarginBegin sapUiSmallMarginTop"/>
+            <m:Title text="WORKFLOW" class="sapUiMediumMarginBegin sapUiSmallMarginTop"/>
+            <m:Title text="FTP INTERFACING" class="sapUiMediumMarginBegin sapUiSmallMarginTop"/>
+            <m:Title text="ODATA SERVICE" class="sapUiMediumMarginBegin sapUiSmallMarginTop"/>
+            <m:Title text="SMARTFORM" class="sapUiMediumMarginBegin sapUiSmallMarginTop"/>
+            <m:Title text="ALV REPORT" class="sapUiMediumMarginBegin sapUiSmallMarginTop"/>
+        </m:HBox>
+        
+        <m:HBox class="sapUiMediumMarginTop">
+            <m:Image src="https://openui5.org/5bdd288371ed8100415f04563acc8dfe/phenix_blue.svg"  class="sapUiSmallMarginBegin" width="4em"/>
+            <m:Image src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" class="sapUiLargeMarginBegin" width="4em"/>                
+            <m:Image src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" class="sapUiMediumMarginBegin" width="4em"/> 
+            <m:Image src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" class="sapUiMediumMarginBegin" width="4em"/> 
+            <m:Image src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" class="sapUiMediumMarginBegin" width="4em"/>  
+            <m:Image src="https://seeklogo.com/images/F/firebase-logo-402F407EE0-seeklogo.com.png" class="sapUiMediumMarginBegin" width="3em"/>  
+            <m:Image src="https://code.visualstudio.com/assets/images/code-stable.png" class="sapUiMediumMarginBegin" width="3em"/>     
+            <m:Image src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" class="sapUiMediumMarginBegin" width="4em"/>          
+        </m:HBox>
+
+        <m:HBox>
+            <m:Text text="SAP UI5" class="sapUiMediumMarginBegin" />
+            <m:Text text="Javascript" class="sapUiLargeMarginBegin" />
+            <m:Text text="Python" class="sapUiLargeMarginBegin" />
+            <m:Text text="Node JS" class="sapUiLargeMarginBegin"/>
+            <m:Text text="React" class="sapUiLargeMarginBegin"/>
+            <m:Text text="Firebase" class="sapUiLargeMarginBegin"/>
+            <m:Text text="VS Code" class="sapUiMediumMarginBegin"/>
+            <m:Text text="Bootstrap" class="sapUiMediumMarginBegin"/>
+        </m:HBox>
+
+        <m:HBox class="sapUiLargeMarginTop">
+            <m:Image src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg" width="7em"/>
+            <m:Image src="https://www.eclipse.org/org/artwork/images/eclipse_ide_logo.png" class="sapUiLargeMarginBegin" width="7em"/> 
+        </m:HBox>
+
+    </m:VBox>
+
+</mvc:View>

@@ -1,0 +1,133 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.uxap"
+	xmlns:m="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:skills="aaufar.aufportofolioproject.SharedBlocks.skills"
+	xmlns:projects="aaufar.aufportofolioproject.SharedBlocks.projects"
+	xmlns:career="aaufar.aufportofolioproject.SharedBlocks.career"
+    xmlns:others="aaufar.aufportofolioproject.SharedBlocks.others"
+    controllerName="aaufar.aufportofolioproject.controller.Main"
+	height="100%">
+
+	<ObjectPageLayout id="ObjectPageLayout"
+		showTitleInHeaderContent="true"
+		upperCaseAnchorBar="false">
+		<headerTitle>
+			<ObjectPageDynamicHeaderTitle>
+
+				<expandedHeading>
+					<m:Title text="ADITYA AUFAR" wrapping="true" />
+				</expandedHeading>
+
+				<snappedHeading>
+					<m:HBox>
+						<m:VBox>
+							<m:Avatar src="https://pbs.twimg.com/profile_images/1265220496624201728/jvXIJI7Q_400x400.jpg" class="sapUiSmallMarginEnd" />
+						</m:VBox>
+
+						<m:VBox>
+							<m:Title text="ADITYA AUFAR" wrapping="true"/>
+							<m:Label text="Software Developer"/>
+						</m:VBox>
+					</m:HBox>
+				</snappedHeading>
+
+				<expandedContent>
+					<m:Label text="Software Developer"/>
+				</expandedContent>
+
+				<snappedTitleOnMobile>
+					<m:Title text="ADITYA AUFAR"/>
+				</snappedTitleOnMobile>
+
+			</ObjectPageDynamicHeaderTitle>
+		</headerTitle>
+
+
+		<headerContent>
+			<m:HeaderContainer id="headerContainer" scrollStep="200" showDividers="false">
+				<m:HBox class="sapUiSmallMarginEnd sapUiSmallMarginBottom">
+					<m:Avatar src="https://pbs.twimg.com/profile_images/1265220496624201728/jvXIJI7Q_400x400.jpg" class="sapUiMediumMarginEnd sapUiSmallMarginBottom" displaySize="XL"/>
+				</m:HBox>
+
+
+				<m:VBox class="sapUiSmallMarginEnd sapUiSmallMarginBottom">
+					<m:Title text="Basic Info" class="sapUiTinyMarginBottom" />
+
+					<m:HBox class="sapUiTinyMarginBottom">
+						<core:Icon src="sap-icon://account"/>
+						<m:Link text="adityaaufar.com" href="http://adityaaufar.com" class="sapUiSmallMarginBegin"/>
+					</m:HBox>
+
+					<m:HBox>
+						<core:Icon src="sap-icon://email"/>
+						<m:Link text="adityaaufar@gmail.com" class="sapUiSmallMarginBegin"/>
+					</m:HBox>
+                    
+				</m:VBox>
+
+				<m:VBox class="sapUiSmallMarginEnd sapUiSmallMarginBottom">
+                    <m:Title text="Social Spaces" class="sapUiSmallMarginBottom" />
+                    <m:HBox>
+						<m:Image press="toLinkedin" src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" width="2em"/>
+                        <m:Image press="toGithub" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="sapUiSmallMarginBegin" width="2em"/>                
+                    </m:HBox>
+				</m:VBox>
+
+				<m:VBox class="sapUiSmallMarginEnd sapUiSmallMarginBottom">
+					<m:Title  text="Summary" class="sapUiTinyMarginBottom" />
+                    <m:Text  width="320px" text="10 Years in Total of Software Development." class="sapUiTinyMarginBottom"/>
+					<m:Text  width="320px" text="7 Years of SAP ABAP as The Main Profession." class="sapUiTinyMarginBottom"/>
+                    <m:Text  width="320px" text="The Rest is for Hobby and Out of Curiosity." class="sapUiTinyMarginBottom"/>
+				</m:VBox>
+                
+			</m:HeaderContainer>
+		</headerContent>
+
+		<sections>
+			<ObjectPageSection titleUppercase="false" id="skillsSection" title="Skills and Tools">
+				<subSections>
+					<ObjectPageSubSection id="skillsSectionSS1"  title="Skills and Tools" titleUppercase="false">
+						<blocks>
+							<skills:SkillsBlock id="skillsblock" class="sapUxAPObjectPageSubSectionAlignContent"/>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+
+			<ObjectPageSection titleUppercase="false" id="projectsSection" title="Personal" importance="Medium">
+				<subSections>
+					<ObjectPageSubSection id="projectsSectionSS1" title="Projects" titleUppercase="false">
+						<blocks>
+							<projects:BlockWedding  id="wedding" class="sapUxAPObjectPageSubSectionAlignContent"/>
+							<projects:BlockSparetodo id="sparetodo" class="sapUxAPObjectPageSubSectionAlignContent"/>
+							<projects:BlockPokepedia id="pokepedia" class="sapUxAPObjectPageSubSectionAlignContent"/>
+							<projects:BlockAufbot  id="aufbot" columnLayout="1" class="sapUxAPObjectPageSubSectionAlignContent"/>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+
+			<ObjectPageSection titleUppercase="false" id="careerSection" title="Career">
+				<subSections>
+					<ObjectPageSubSection id="careerSectionSS1" title="Career" titleUppercase="false">
+						<blocks>
+							<career:BlockCareer id="careerpart1" class="sapUxAPObjectPageSubSectionAlignContent"/>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+
+            <ObjectPageSection titleUppercase="false" id="othersSection" title="Other Noteworthy">
+				<subSections>
+					<ObjectPageSubSection id="othersSectionSS1" titleUppercase="false">
+						<blocks>
+							<others:OthersBlock id="othersblock" class="sapUxAPObjectPageSubSectionAlignContent"/>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+		</sections>
+	</ObjectPageLayout>
+</mvc:View>
+

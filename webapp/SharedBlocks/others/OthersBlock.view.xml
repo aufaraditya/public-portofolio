@@ -1,0 +1,19 @@
+
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.uxap"
+	xmlns:m="sap.m"
+	xmlns:core="sap.ui.core"
+	height="100%">
+
+    <m:VBox class="sapUiSmallMarginEnd sapUiSmallMarginBottom">
+        <m:HBox class="sapUiMediumMarginTop">
+            <m:Image press="sapabap101open" src="https://user-images.githubusercontent.com/5984684/151402194-905ad3a8-4169-4e19-a768-5b199999ee8b.png" class="sapUiMediumMarginBegin sapUiSmallMarginBottom" width="10em"/>        
+        </m:HBox>
+
+              <m:HBox>
+            <m:Link text="SAP ABAP Basics with Illustration" emphasized="true" href="https://www.instagram.com/sapabap101/"/>
+        </m:HBox>
+
+    </m:VBox>
+
+</mvc:View>
