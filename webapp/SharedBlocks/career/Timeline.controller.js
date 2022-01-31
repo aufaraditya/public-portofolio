@@ -7,32 +7,32 @@ sap.ui.define([ "sap/ui/core/mvc/Controller", "sap/ui/model/json/JSONModel", "sa
 		"In cursus, lorem eget convallis sodales, ante risus finibus augue, at euismod dui enim at nisl. Donec maximus, ipsum at egestas tempus, nisi urna lacinia leo, at tempor velit magna vel dui. Pellentesque fermentum auctor quam, non vehicula felis elementum nec. Quisque eget libero at dolor tincidunt imperdiet. Praesent mi mi, faucibus a neque sit amet, mollis vulputate est. Vivamus mattis facilisis nisi et tincidunt. Nam bibendum aliquet iaculis. In odio metus, semper ac placerat quis, cursus sed dolor. Mauris scelerisque sem id porta varius. Maecenas odio diam, egestas eget leo eu, sagittis convallis erat. Donec quam metus, interdum sit amet molestie ut, interdum vel arcu. Nullam dolor justo, semper convallis mollis sed, hendrerit id quam. Proin non aliquet tortor, non facilisis nibh. Praesent ut lorem tellus. Donec tincidunt condimentum condimentum. Aenean tempor lacus vel odio ultricies tempus." +
 		"Donec eu lorem varius eros suscipit egestas. Etiam vel risus odio. Sed lobortis nisi vitae sodales tempor. Suspendisse ut sapien nec diam maximus convallis. Cras eu nunc aliquam, malesuada quam at, congue purus. Donec nec augue non nisi egestas rutrum id vitae justo. Donec vestibulum venenatis dui ac posuere. Aenean et enim volutpat, dignissim velit eget, tempor mauris. Sed lobortis augue ac purus blandit vestibulum. Maecenas ut bibendum diam. In a placerat nunc, et semper arcu. Quisque sollicitudin, purus sit amet efficitur vestibulum, augue urna tincidunt lectus, vitae pulvinar lorem justo id ex. Vivamus at massa arcu. Proin sapien lorem, ultrices a ullamcorper eu, tincidunt ac mi. Nam eu vulputate dui, id elementum metus. Proin finibus neque nulla, eget mattis nisi rutrum non.";
 
-	return Controller.extend("aaufar.aufportofolioproject.SharedBlocks.employment.Timeline", {
+	return Controller.extend("aaufar.aufportofolioproject.SharedBlocks.career.Timeline", {
 		onInit: function () {
-			var aData = {
-				Items: []
-			};
-			var oDate = new Date();
-			for (var i = 1; i < 150; i++) {
-				aData.Items.push({
-					Date: new Date(new Date(oDate).setDate(oDate.getDate() - i)),
-					Title: i + "",
-					Text: sText.substring(0, Math.random() * 1500),
-					UserName: 'User'
-				});
-			}
+			// var aData = {
+			// 	Items: []
+			// };
+			// var oDate = new Date();
+			// for (var i = 1; i < 150; i++) {
+			// 	aData.Items.push({
+			// 		Date: new Date(new Date(oDate).setDate(oDate.getDate() - i)),
+			// 		Title: i + "",
+			// 		Text: sText.substring(0, Math.random() * 1500),
+			// 		UserName: 'User'
+			// 	});
+			// }
 
-			var oModel = new JSONModel(aData);
+			// var oModel = new JSONModel(aData);
 
-			oModel.setSizeLimit(150);
-			this.getView().setModel(oModel);
-			this._timeline = this.byId("idTimeline");
+			// oModel.setSizeLimit(150);
+			// this.getView().setModel(oModel);
+			// this._timeline = this.byId("idTimeline");
 		},
 		onPressItems : function(evt) {
 			MessageToast.show("The TimelineItem is pressed.");
 		},
 		sliderChanged: function (oEvent) {
-			this.byId("idPanel").setHeight(oEvent.getParameter("value") + "px");
+			// this.byId("idPanel").setHeight(oEvent.getParameter("value") + "px");
 		}
 	});
 });
